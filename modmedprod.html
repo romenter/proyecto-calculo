@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porcentajes y descuentos</title>
+    <link rel="stylesheet" href="./styles/descuentos.css">
+</head>
+<body>
+    <header>
+
+        <div class="title">  
+            <h1>
+                StadisticBoth
+            </h1>
+            <img src="./pngwing.com.png" alt="MathBot">
+        </div>      
+    </header> 
+<!-- Seccion Acumulacion de arrays --><section>
+    <div>
+        <div>
+            <h2>[{}]</h2>
+            <h2>Array elements</h2>
+        </div>
+
+        <input type="number" name="" id="pushNumbers" placeholder="Number">
+        <button type="button" onclick="pushNumbers()">Push</button>
+        <div>
+            <p>Quantity numbers <span id="quantity"></span></p>
+        </div>
+        <div>
+            <p>In call order list</p>
+            <p id="arrElements"></p>
+        </div>
+        <p>In ascendent order list</p>
+        <button type="button" onclick="orderList()">Go</button>
+        <p id="order"></p>
+    </div>
+</section>
+
+<h2>Results</h2>
+<!-- Seccion Resultados --><div><section>
+    <div class="subtitle">
+        <h2></h2>
+        <h2>Average</h2>
+    </div>
+    <form action="">
+        <p>To know our average, we add our every numbers and divide by amount of numbers we have </p>
+        <p>Let's se your average of array elements</p>
+    </form>
+    <button type="button" onkeypress="averageArray()" onclick="averageArray()">Let's see</button>
+    <p id="average"></p>
+    </section>
+
+    
+        <section>
+            <div class="subtitle">
+                <h2>/</h2>
+                <h2>Median</h2>
+            </div>
+            <form action="">
+                <p>To know our Median number, we take the center number in list. We don't have? Lets creat it!</p>
+                <p>Take both numbers who habit in center of list and add it. Now, divide it in two and... Ualá! A median number.</p>
+            </form>
+            <button type="button" onclick="getMedian()">Let's see</button>
+            <p id="median"></p>
+            </section>
+            <section>
+                <div class="subtitle">
+                    <h2>/</h2>
+                    <h2>Mode</h2>
+                </div>
+                <form action="">
+                    <p>What's the number most repeated? How much is it repeat?</p>
+                    <p>Let's discover it!!</p>
+                </form>
+                <button type="button" onclick="calcularModa(arrayList)">Let's see</button>
+                <p id="moda1"></p>
+                
+                </section>
+
+
+</div>
+    <script src="./script/modmedprod.js"></script>
+</body>
+</html>

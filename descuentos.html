@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porcentajes y descuentos</title>
+    <link rel="stylesheet" href="./styles/descuentos.css">
+</head>
+<body>
+    <header>
+
+        <div class="title">  
+            <h1>
+                PorcentageBoth
+            </h1>
+            <img src="./pngwing.com.png" alt="MathBot">
+        </div>      
+    </header> 
+<!-- Seccion cuadrado --><section>
+    <div class="subtitle">
+        <h2>%</h2>
+        <h2>Discounts</h2>
+    </div>
+    <form action="">
+        <input id="price" type="number" placeholder="Price item">
+        <input id="discounts" type="number" placeholder="Porcentage discount">
+        <div class="input-buttom">
+            <button type="button" onclick="OneClickButtonDescuento()">
+                Calculate discount product
+            </button >
+        </div>
+        <p id="resultDiscount"></p>
+    </form>
+    <form action="">
+        <h2>
+            You want discount coupon?
+        </h2>
+        <p>Lets play a game</p>
+        <p>Mention a popular social network, and win a discount</p>
+        <input type="text" name="" id="coupon" placeholder="Type here">
+        <p id="resultCoupon"> </p>
+        <button type="button" onclick="couponDiscount()">Catch this!!</button>
+    </form>
+    </section>
+    <script src="./script/descuentos.js"></script>
+</body>
+</html>
