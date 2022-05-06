@@ -331,10 +331,10 @@ footer .rigth{
 footer .up span .name{
     font-weight: 700;
 }
-/* .input-container{
-    flex-direction: row;
-    flex-wrap: wrap;
-} */
+footer .rigth a{
+    display: flex;
+    align-items: center;
+}
 
 @keyframes rotation {
     from {
@@ -445,6 +445,9 @@ footer .up span .name{
     }
     .subtitle img:hover{
         animation: rotation 1.2s infinite linear
+    }
+    .rigth div:first-child:hover {
+        transform: scale(1.3);
     }
 }
     @media(min-width: 768px){
