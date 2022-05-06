@@ -5,44 +5,90 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Porcentajes y descuentos</title>
-    <link rel="stylesheet" href="./styles/descuentos.css">
+    <link rel="stylesheet" href="./styles/modmedprod.css">
+    <link href="https://fonts.googleapis.com/css2?family=Island+Moments&family=Overpass:wght@400;700&family=Quicksand:wght@300;500;700&family=Roboto:wght@100&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <header>
+    <!-- header --><header>
 
-        <div class="title">  
-            <h1>
-                StadisticBoth
-            </h1>
-            <img src="./pngwing.com.png" alt="MathBot">
+        <div class="title"> 
+            <a href="./index.html">
+                <h1>
+                    StadisticBoth
+                    <img src="./pngwing.com.png" alt="MathBot">
+                </h1>
+                
+            </a>    
         </div>      
     </header> 
-<!-- Seccion Acumulacion de arrays --><section>
+<!-- panel--> <section class="panel"> 
+    <div class="container-1">
+        <a href="./figuras.html" class="page-conteiner">
+        
+            <h3>GeometryBoth</h3>
+            <p>
+                <img src="./cuadrado.png" alt="Square image">
+                <img src="./triangulo.png" alt="Square image">
+                <img src="./circulo.png" alt="Square image">
+            </p>
+        </a>
+        <a href="./modmedprod.html" class="page-conteiner">
+            <h3>StadisticBoth</h3>
+            <p>
+                
+                <img src="./images/medianamod.png" alt="Square image">
+            </p>
+        </a>
+    </div>
+    <div class="container-2">
+        <a href="./salary.html" class="page-conteiner">
+            <h3>SalaryBoth</h3>
+            <p>
+                <img src="./images/salario.png" alt="Square image">
+            </p>
+        </a>
+        <a href="./descuentos.html" class="page-conteiner">
+            <h3>PorcentageBoth</h3>
+            <p>
+                <img src="./images/porcentage.png" alt="Square image">
+                <img src="./images/coupon.png" alt="Square image">
+            </p>
+        </a>
+    </div>    
+</section>
+<!-- Seccion Acumulacion de arrays --><section class="array-push">
     <div>
-        <div>
-            <h2>[{}]</h2>
+        <div class="subtitle">
+            <img src="./images/caja.png" alt="box">
             <h2>Array elements</h2>
         </div>
-
-        <input type="number" name="" id="pushNumbers" placeholder="Number">
-        <button type="button" onclick="pushNumbers()">Push</button>
-        <div>
-            <p>Quantity numbers <span id="quantity"></span></p>
+        <div class="box">
+            <div class="array-push-1">
+                <p>Put elements in the box</p>
+                <input type="number" name="" id="pushNumbers" placeholder="Number">
+                <button type="button" onclick="pushNumbers()">Push</button>
+                <div>
+                    <p>Quantity numbers <span id="quantity"></span></p>
+                </div>
+            </div>
+            <div class="array-push-2">
+                <div>
+                    <p>In call order list</p>
+                    <p id="arrElements"></p>
+                </div>
+                <p>In ascendent order list</p>
+                <button type="button" onclick="orderList()">Go</button>
+                <p id="order"></p>
+            </div>
         </div>
-        <div>
-            <p>In call order list</p>
-            <p id="arrElements"></p>
-        </div>
-        <p>In ascendent order list</p>
-        <button type="button" onclick="orderList()">Go</button>
-        <p id="order"></p>
     </div>
 </section>
 
-<h2>Results</h2>
-<!-- Seccion Resultados --><div><section>
+<h2 class="Resultados">Results</h2>
+<!-- Seccion Resultados --><div class="bigbody"><section class="resultated">
     <div class="subtitle">
-        <h2></h2>
+        <h2>/</h2>
         <h2>Average</h2>
     </div>
     <form action="">
@@ -53,35 +99,57 @@
     <p id="average"></p>
     </section>
 
-    
-        <section>
+
+    <section class="resultated">
+        <div class="subtitle">
+            <h2>/</h2>
+            <h2>Median</h2>
+        </div>
+        <form action="">
+            <p>To know our Median number, we take the center number in list. We don't have? Lets creat it!</p>
+            <p>Take both numbers who habit in center of list and add it. Now, divide it in two and... Ualá! A median number.</p>
+        </form>
+        <button type="button" onclick="getMedian()">Let's see</button>
+        <p id="median"></p>
+    </section>
+        <section class="resultated">
             <div class="subtitle">
                 <h2>/</h2>
-                <h2>Median</h2>
+                <h2>Mode</h2>
             </div>
             <form action="">
-                <p>To know our Median number, we take the center number in list. We don't have? Lets creat it!</p>
-                <p>Take both numbers who habit in center of list and add it. Now, divide it in two and... Ualá! A median number.</p>
+                <p>What's the number most repeated? How much is it repeat?</p>
+                <p>Let's discover it!!</p>
             </form>
-            <button type="button" onclick="getMedian()">Let's see</button>
-            <p id="median"></p>
-            </section>
-            <section>
-                <div class="subtitle">
-                    <h2>/</h2>
-                    <h2>Mode</h2>
-                </div>
-                <form action="">
-                    <p>What's the number most repeated? How much is it repeat?</p>
-                    <p>Let's discover it!!</p>
-                </form>
-                <button type="button" onclick="calcularModa(arrayList)">Let's see</button>
-                <p id="moda1"></p>
+            <button type="button" onclick="calcularModa(arrayList)">Let's see</button>
+            <p id="moda1"></p>
                 
-                </section>
-
-
+        </section>
 </div>
+<!-- Footer--><footer>  
+    <div class="up">
+        <span><span>StadisticBoth created by</span> <span class="name">Romen, Ter Gazarian</span></span>
+    </div>
+    <div class="down">
+        <div class="left">
+            <a class="linkedin" target="_blank" href="https://www.linkedin.com/in/romen-ter-gazarian/">
+                <img src="./images/linkedin.png" alt="">
+                <label class="label-link">LinkedIn</label>
+            </a>
+        </div>
+        <div class="rigth">
+            <div>
+                <a href="">
+                    <img src="https://static.platzi.com/media/blog/unnamed-8089fc33-6322-4bd3-85de-1da032257d4b.png" alt="">
+                </a>
+                <label>Platzi proyect </label>
+            </div>
+            <div>
+                <label for="">📄 Repository<link rel="stylesheet" href="./"></label>
+            </div>
+        </div>
+    </div>
+</footer>
     <script src="./script/modmedprod.js"></script>
 </body>
 </html>

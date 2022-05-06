@@ -5,6 +5,27 @@ function calcularDescuento(price, disc) {
 }
 
 
+// Funcion descripcion descuento
+function OneClickButtonDescuento(){
+    
+    let a = document.getElementById("price");
+    let b = document.getElementById("discounts");
+    let price = parseFloat(a.value);
+    let disc = parseFloat(b.value);
+    let t = document.getElementById('resultDiscount');
+
+    if(price<0 ){
+        alert('Por favor, ingrese un monto mayor a 0')
+    }else{
+        if(disc < 0 || disc > 100){
+            alert('Descuento invalido. Indique un descuento que sea mayor a 0 y menor a 100')
+        }else{
+            let descuento = price - calcularDescuento(price, disc);
+            t.innerText = "El precio final del producto con descuento es de $" +
+        descuento.toFixed(2)
+        }  
+    }
+}
 
 
 
@@ -35,8 +56,11 @@ function couponDiscount(){
     const CouponValid = function (couponValue){
         // let f = document.getElementById("coupon")
         // let coupon = f.value;
+        const coupon1 = document.getElementById('coupon')
+        const coupon = coupon1.value
         return couponValue.name === coupon;
     };
+    
 
 //buserCoupon = primer cupon igual que se encuentre en el array
     const userCoupon = couponValue.find(CouponValid);
@@ -76,30 +100,6 @@ function couponDiscount(){
 
 
 
-// Funcion descripcion descuento
-function OneClickButtonDescuento(){
-    
-    let a = document.getElementById("price");
-    let b = document.getElementById("discounts");
-    let price = parseFloat(a.value);
-    let disc = parseFloat(b.value);
-    let t = document.getElementById('resultDiscount');
-
-    if(price<0 ){
-        alert('Por favor, ingrese un monto mayor a 0')
-    }else{
-        if(disc < 0 || disc > 100){
-            alert('Descuento invalido. Indique un descuento que sea mayor a 0 y menor a 100')
-        }else{
-            let descuento = price - calcularDescuento(price, disc);
-            t.innerText = "El precio final del producto con descuento es de $" +
-        descuento
-        }  
-    }
-
-
-    
-}
 
 
 

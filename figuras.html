@@ -9,89 +9,204 @@
     <link href="https://fonts.googleapis.com/css2?family=Island+Moments&family=Overpass:wght@400;700&family=Quicksand:wght@300;500;700&family=Roboto:wght@100&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+<!-- header --><header>
 
-        <div class="title">  
-            <h1>
-                GeometryBoth
-            </h1>
-            <img src="./pngwing.com.png" alt="MathBot">
+        <div class="title"> 
+            <a href="./index.html">
+                <h1>
+                    GeometryBoth
+                    <img src="./pngwing.com.png" alt="MathBot">
+                </h1>
+                
+            </a>    
         </div>      
     </header> 
+<!-- panel--> <section class="panel"> 
+    <div class="container-1">
+        <a href="./figuras.html" class="page-conteiner">
+        
+            <h3>GeometryBoth</h3>
+            <p>
+                <img src="./cuadrado.png" alt="Square image">
+                <img src="./triangulo.png" alt="Square image">
+                <img src="./circulo.png" alt="Square image">
+            </p>
+        </a>
+        <a href="./modmedprod.html" class="page-conteiner">
+            <h3>StadisticBoth</h3>
+            <p>
+                
+                <img src="./images/medianamod.png" alt="Square image">
+            </p>
+        </a>
+    </div>
+    <div class="container-2">
+        <a href="./salary.html" class="page-conteiner">
+            <h3>SalaryBoth</h3>
+            <p>
+                <img src="./images/salario.png" alt="Square image">
+            </p>
+        </a>
+        <a href="./descuentos.html" class="page-conteiner">
+            <h3>PorcentageBoth</h3>
+            <p>
+                <img src="./images/porcentage.png" alt="Square image">
+                <img src="./images/coupon.png" alt="Square image">
+            </p>
+        </a>
+    </div>    
+</section><div class="bigbody">
 <!-- Seccion cuadrado --><section>
     <div class="subtitle">
         <img src="./cuadrado.png" alt="Square image">
         <h2>Square</h2>
     </div>
     <form action="">
-        <label for="inputSquare">
-            Ingrese cuanto mediran los lados del cuadrado
-        </label>
-        <input id="inputSquare" type="number">
+        <p class="rules">
+            Enter sides of the square
+        </p>
+        <input id="inputSquare" type="number" placeholder="Side">
         <div class="input-buttom">
-            <button type="button" onclick="calcularPerimetroCuadrado()">
-                Calcular perimetro
-            </button >
-            <button type="button" onclick="calcularAreaCuadrado()">
-                Calcular area
+            <button type="button" onclick="calcularPerimetroCuadrado()">    
+                calculate perimeter
             </button>
+            <button type="button" onclick="calcularAreaCuadrado()">
+                calculate area
+            </button>
+            <div class="results">
+                <label for="">square perimeter: </label> 
+                <label id="texto_perimetro"></label>
+            </div>
+            <div class="results">
+                <label >square area: </label>
+                <label id="texto_area"></label>
+            </div>
         </div>
     </form>
     </section>
 <!-- Seccion triangulo --><section>
-        <h2>Calcula el area y perimetro del triangulo</h2>
-        <form action="">
-            <label for="">Ingrese los datos que correspondan segun su conveniencia</label>
-            <input id="inputA" type="number" placeholder="Lado A">
-            <input id="inputB" type="number" placeholder="Lado B">
-            <input id="inputC" type="number" placeholder="Base">
-            <input id="Altura" type="number" placeholder="Altura">
+        
+        <div class="subtitle">
+            <img src="./triangulo.png" alt="Square image">
+            <h2>Triangle</h2>
+        </div>
+            <form action="">
+                <p class="rules">Enter the appropriate data</p>
+                <div class="input-container">
+                    <div class="input-triangle">
+                    <div>
+                        <input id="inputA" type="number" placeholder="Side A">
+                        <input id="inputB" type="number" placeholder="Side B">
+                            </div><div>
+                        <input id="inputC" type="number" placeholder="Base">
+                        <input id="Altura" type="number" placeholder="Height">
+                    </div>   </div> 
+                <button type="button" onclick="calcularPerimetroTriangulo()">
+                    calculate perimeter
+                </button >
+                <button type="button" onclick="calcularAreaTriangulo()">
+                    calculate area
+                </button>
 
-            <button type="button" onclick="calcularPerimetroTriangulo()">
-                Calcular perimetro
-            </button >
-            <button type="button" onclick="calcularAreaTriangulo()">
-                Calcular area
-            </button>
+                <div class="results">
+                    <span>triangle perimetre: </span>
+                    <label id="textot_perimetro"></label>
+                </div>
+                <div class="results">
+                    <span>triangle area: </span>
+                    <label id="textot_area"></label>
+                </div>
             </form>
         </section>
 <!-- Seccion triangulo isoseles--><section>
-    <h2>Calcula el area y perimetro del triangulo isoseles</h2>
-    <form action="">
-        <label for="">Ingrese los datos que correspondan segun su conveniencia</label>
-        <input id="input1" type="number" placeholder="Lado A">
-        <input id="input2" type="number" placeholder="Lado B">
-        <input id="input3" type="number" placeholder="Base">
-        
-        <button type="button" onclick="Altura()">
-            Calcular altura
-        </button>
+    
+    <div class="subtitle" id="subtitle3">
+        <img src="./trianglerectang.png" alt="Square image">
+        <h2>Isosceles triangle</h2>
+    </div>
+        <form action="">
+            <p class="rules">Enter the appropriate data</p>
+            <div class="conteiner-triangle-i"><div>
+                <input id="input1" type="number" placeholder="Side A">
+                <input id="input2" type="number" placeholder="Side B">
+            </div>
+                <input id="input3" type="number" placeholder="Base">
+            </div>
+            <button type="button" onclick="Altura()">
+                calculate heigth
+            </button>
 
-        <button type="button" onclick="calcularPerimetroTrianguloIsoseles()">
-            Calcular perimetro
-        </button >
-        <button type="button" onclick="calcularAreaTrianguloIsoseles()">
-            Calcular area
-        </button>
-        
+            <button type="button" onclick="calcularPerimetroTrianguloIsoseles()">
+                calculate perimeter
+            </button >
+            <button type="button" onclick="calcularAreaTrianguloIsoseles()">
+                calculate area
+            </button>
+            <div class="results">
+                <span>triangle heigth: </span>
+                <label id="textoi_altura"></label>
+            </div>
+            <div class="results">
+                <span>triangle perimeter: </span>
+                <label id="textoi_perimetro"></label></div>
+            <div class="results">
+                <span>triangle area: </span> 
+                <label id="textoi_area"></label>
+            </div>
         </form>
     </section>
     
 <!-- Seccion circulo--><section>
-    <h2>Ingrese el valor del radio</h2>
+    <div class="subtitle">
+        <img src="./circulo.png" alt="Square image">
+        <h2>Circle</h2>
+    </div>
+
+    
     <form action="">
-        <label for="radio">Radio</label>
+        <p class="rules">Enter radio</p>
         <input id="radio" type="number" placeholder="Radio">
         
         <button type="button" onclick="calcularPerimetroCirculo()">
-            Calcular perimetro
+            calculate perimeter
         </button >
         <button type="button" onclick="calcularAreaCirculo()">
-            Calcular area
+            calculate area
         </button>
-        
+            <div class="results">
+                <span>circle perimeter: </span>
+                <label id="circle_perimetro"></label>
+            </div>
+            <div class="results">
+                <span>circle area: </span>
+                <label id="circle_area"></label>
+            </div>
         </form>
-    </section>   
+    </section>   </div>
+<!-- Footer--><footer>  
+        <div class="up">
+            <span><span>GeometryBoth created by</span> <span class="name">Romen, Ter Gazarian</span></span>
+        </div>
+        <div class="down">
+            <div class="left">
+                <a class="linkedin" target="_blank" href="https://www.linkedin.com/in/romen-ter-gazarian/">
+                    <img src="./images/linkedin.png" alt="">
+                    <label class="label-link">LinkedIn</label>
+                </a>
+            </div>
+            <div class="rigth">
+                <div>
+                    <a href="">
+                        <img src="https://static.platzi.com/media/blog/unnamed-8089fc33-6322-4bd3-85de-1da032257d4b.png" alt="">
+                    </a>
+                    <label>Platzi proyect </label>
+                </div>
+                <div>
+                    <label for="">📄 Repository<link rel="stylesheet" href="./"></label>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="./script/figuras.js"></script>
 </body>
 </html>

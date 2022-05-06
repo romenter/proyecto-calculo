@@ -12,16 +12,13 @@ a:link, a:visited, a:active {
     color: black
 }
 
-
 header{
     width: auto;
 }
-
 header img {
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
 }
-
 .title{
     margin-top: 40px;
     margin-bottom: 20px;
@@ -44,30 +41,48 @@ header img {
     align-items: center;
     justify-content: center; 
 }
-
-
 .title h1:hover {
     transform: scale(1.2);
 }
-
 .subtitle{
+    display: flex;
+    align-items: flex-start;
+    justify-content: start; 
     padding-left: 10px;
 }
 .subtitle h2{
     margin-left: 25px;
 }
 
+
+
+
+
 section {
     display: flex;
     flex-direction: column;
-    
     margin: 20px 7.5px 25px 7.5px;
     background-color: #8d7a2d;
     padding: 15px;
     border-radius: 15px;
     border-bottom: solid 8px #665821;
-    max-width: 425px; 
+    
 }
+
+.resultated{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.array-push div{
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    flex-direction: column;
+}
+
+
 
 section:hover{
     background-color: #f7d547;
@@ -75,22 +90,11 @@ section:hover{
     transform: scale(1.02);
 
 }
-
-
-.array-push{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-
 div .input-buttom{
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
 form {
     display: flex;
     align-items: center;
@@ -99,9 +103,7 @@ form {
     padding-bottom: 10px
 }
 
-form .rules {
-    font-weight: 700;
-}
+
 form div{
     display: flex;
     align-items: center;
@@ -109,8 +111,6 @@ form div{
     padding-bottom: 5px;
     padding-top: 5px;
 }
-
-
 
 .results{
     display: flex;
@@ -123,9 +123,9 @@ form div{
     font-weight: 500;
 }
 
-
-
-
+.Resultados{
+    font-size: 40px;
+}
 
 section .panel{
     height: auto;
@@ -133,7 +133,6 @@ section .panel{
     display: flex;
     flex-direction: column;
 }
-
 .container-1, .container-2{
     display: flex;
     align-items: center;
@@ -216,13 +215,13 @@ section .panel{
     padding-top: 10px;
 }
 .subtitle img {
-    height: 45px;
-    width: 45px;
+    height: 75px;
+    width: 75px;
     display: flex;
     align-items: center;
     justify-content: center;
     padding-top: 15px;
-    animation: rotation 3s infinite linear;
+    animation: boxdance 0.8s infinite linear;
 }
 .subtitle img:hover {
     transform: scale(1.5);
@@ -303,15 +302,14 @@ footer .down{
     justify-content: space-between;
     padding-top: 12px;
 }
+footer .left:hover{
+    transform: scale(1.3);
+    cursor: pointer;
+}
 footer img {
     height: 20px;
     width: 20px; 
     
-}
-
-footer .left:hover{
-    transform: scale(1.3);
-    cursor: pointer;
 }
 .linkedin {
     display: flex;
@@ -353,6 +351,19 @@ footer .up span .name{
         transform: rotate(40deg);
     }75%{
         transform: rotate(-20deg);
+    }
+}
+@keyframes boxdance {
+    0%{
+        transform: rotate(0deg);
+    }
+    20%{
+        transform: rotate(40deg);
+    }40%{
+        transform: rotate(-20deg);
+    }
+    100%{
+        transform: rotate(0deg);
     }
 }
 
@@ -412,6 +423,35 @@ footer .up span .name{
     
     .panel {
         width: 100%;
+        max-width: 425px;
+    }
+
+
+    section .array-push{
+        width: 725px;
+    }
+    .array-push .subtitle{
+        display: flex;
+        flex-direction: row;
+    }
+    .box{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row !important;
+        
+    }
+    .box .array-push-1,
+    .box .array-push-2
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction:column;
+        padding: 0px 15px 0px 15px;
+    }
+    .box .array-push-1{
+        border-right: solid black 1px;
     }
 
     .bigbody{
@@ -424,27 +464,24 @@ footer .up span .name{
     
     .bigbody section{
         width: 340px;
-        height: 500px;
+        height: 400px;
     }
 
     .subtitle img {
-        height: 90px;
-        width: 90px;
+        height: 120px;
+        width: 120px;
         
     }
     footer .up span{
         transform: scale(0.8);
     }
     header img {
-        height: 80px;
-        width: 80px;
+        height: 60px;
+        width: 60px;
         animation: dance 3s infinite linear
     }
     header img:hover{
         animation: dance 0.5s infinite linear
-    }
-    .subtitle img:hover{
-        animation: rotation 1.2s infinite linear
     }
 }
     @media(min-width: 768px){

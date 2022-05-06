@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Porcentajes y descuentos</title>
-    <link rel="stylesheet" href="./styles/descuentos.css">
+    <link rel="stylesheet" href="./styles/salary.css">
     <link href="https://fonts.googleapis.com/css2?family=Island+Moments&family=Overpass:wght@400;700&family=Quicksand:wght@300;500;700&family=Roboto:wght@100&display=swap" rel="stylesheet">
 
 </head>
@@ -15,8 +15,8 @@
         <div class="title"> 
             <a href="./index.html">
                 <h1>
-                    PorcentageBoth
-                    <img src="./pngwing.com.png" alt="MathBot">
+                    SalaryExcersise
+                    <img src="./images/libro.png" alt="MathBot">
                 </h1>
                 
             </a>    
@@ -56,36 +56,32 @@
             </p>
         </a>
     </div>    
-</section>
-<!-- Seccion input --><section>
+</section> 
+<!-- Seccion cuadrado --><section>
     <div class="subtitle">
         <h2>%</h2>
-        <h2>Discounts</h2>
+        <h2>Salary</h2>
     </div>
     <form action="">
-        <input id="price" type="number" placeholder="Price">
-        <input id="discounts" type="number" placeholder="%">
         <div class="input-buttom">
-            <button type="button" onclick="OneClickButtonDescuento()">
-                Calculate discount product
+            <button type="button" onclick="averageSalary()">
+                Calculate median salary
             </button >
+            Median all
+            <p id="median"></p>
+            Median top 10
+            <p id="median10"></p>
         </div>
-        <p id="resultDiscount"></p>
     </form>
-    <form action="">
-        <h2>
-            You want discount coupon?
-        </h2>
-        <p>Lets play a game</p>
-        <p>Mention a popular social network, and win a discount</p>
-        <input type="text" name="" id="coupon" placeholder="Type here">
-        <p id="resultCoupon"> </p>
-        <button type="button" onclick="couponDiscount()">Catch this!!</button>
-    </form>
+    </section>
+    <section class="Explanation">
+        <h2>Explanation</h2>
+        <p>Excersise in process</p>
+        
     </section>
     <!-- Footer--><footer>  
         <div class="up">
-            <span><span>PorcentageBoth created by</span> <span class="name">Romen, Ter Gazarian</span></span>
+            <span><span>SalaryExcersise created by</span> <span class="name">Romen, Ter Gazarian</span></span>
         </div>
         <div class="down">
             <div class="left">
@@ -107,6 +103,7 @@
             </div>
         </div>
     </footer>
-    <script src="./script/descuentos.js"></script>
+    <script src="./script/salary.js"></script>
+    <script src="./script/analisis.js"></script>
 </body>
 </html>
